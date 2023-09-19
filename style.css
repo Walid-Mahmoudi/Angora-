@@ -1,0 +1,394 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+/* section header */
+.navbar .navbar-nav .nav-item {
+    padding-left: 25px;
+}
+
+.navbar .navbar-nav .nav-item a:hover {
+    color: #f25454;
+}
+
+.navbar .navbar-nav .nav-item a.active {
+    color: #f25454;
+}
+
+.line-under-nav {
+    width: 100%;
+    height: 1px;
+    background: white;
+    z-index: 99999;
+    position: absolute;
+    top: 75px;
+    opacity: .5;
+}
+
+.scrol-motion {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 999999;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scrol-motion:hover {
+    border: 2px solid #f25454;
+    transition: border .5s;
+}
+
+.scrol-motion .content {
+    width: 10px;
+    height: 15px;
+    background-color: white;
+    border-radius: 30%;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    animation-name: one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.scrol-motion:hover .content {
+    background-color: #f25454;
+    transition: background-color .5s;
+}
+
+@keyframes one {
+    0% {
+        top: 5;
+    }
+
+    25% {
+        top: 15;
+    }
+
+    50% {
+        top: 25;
+    }
+
+    75% {
+        top: 35;
+    }
+
+    100% {
+        top: 50;
+        opacity: 0;
+    }
+}
+
+.carousel-item img {
+    height: 100vh;
+}
+
+.carousel-item h1 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+.scrol1 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+}
+
+.scrol2 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    position: absolute;
+    top: 57%;
+}
+/* section about */
+.text-about h3{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.text-about h2{
+    opacity: .5;
+    font-size: 55px;
+    font-weight: bolder;
+}
+.line-animation{
+    width: 7%;
+    transition: .5s;
+}
+.line-animation:hover{
+    width: 15%;
+}
+.lead{
+    padding: 20px 60px;
+}
+
+.h6-progress1 {
+    position: relative;
+    right: 20%;
+}
+
+.h6-progress2 {
+    position: relative;
+    right: 5%;
+}
+
+.h6-progress3 {
+    position: relative;
+    right: 15%;
+}
+
+.h6-progress4 {
+    position: relative;
+    right: 30%;
+}
+
+.progress .progress-bar {
+    background-color: #f25454;
+    height: 5px;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.team-overlay{
+    background-color: #f25454;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.team-overlay a{
+    padding: 18px;
+    color: white;
+}
+.box-data:hover .team-overlay{
+    opacity: .5;
+    overflow: hidden;
+    color: white;
+    transition: color 1s;
+}
+.box-data img{
+    transition: transform 1.2s;
+}
+.box-data:hover img{
+    transform: scale(1.2 , 1.2);
+    overflow: hidden;
+}
+.text-data h5{
+    text-align: center;
+    font-weight: bold;
+}
+.text-data p{
+    text-align: center;
+}
+.ask{
+    width: 60%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.ask button{
+    background-color: #f25454;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.section-services{
+    background-color: #fafafa;
+}
+.text-content h2{
+    font-size: 22px;
+    color: black;
+}
+.text-content .com{
+    font-size: 25px;
+    color: #f25454;
+}
+.text-content p{
+    padding-left: 60px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+.photo-clint{
+    width: 60%;
+    margin: auto;
+}
+.photo-clint img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 5px;
+    opacity: .5;
+    cursor: pointer;
+}
+.photo-clint img.active{
+    opacity: 1;
+}
+.blog{
+    padding-top: -20px;
+}
+.text-content h1{
+    font-weight: bolder;
+}
+.text-content h5{
+    font-weight: bold;
+    font-size: 20px;
+    transition: color .5s;
+}
+.text-content h5:hover{
+    color: #f25454;
+}
+.input-data input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #a6a6a6;
+    border: #eee solid 2px;
+}
+.input-data textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #a6a6a6;
+    border: #eee solid 2px;
+}
+.input-data button{
+    background-color: #f25454;
+    color: white;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.section-end{
+    background-position: cover;
+    background-size: 100% 100%;
+    background-color: black;
+    margin-top: 40px;
+    padding: 30px;
+    margin-bottom: -40px !important;
+    position: relative;
+}
+.contact-fixed{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    right: 48%;
+    top: 0;
+    opacity: .8;
+}
+.contact-fixed:hover{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.contect-item{
+    padding-top: 30px;
+}
+.contect-item h1{
+    font-weight: bolder;
+}
+.contect-item  p{
+    font-size: 20px;
+}
+.contect-item li{
+    list-style: none;
+    padding: 10px;
+}
+.contect-item ul{
+    padding: 0;
+    margin: 0;
+}
+.contect-item ul li a{
+    color: #a6a6a6;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.populer-a{
+    color: #a6a6a6;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+#footer{
+    background-color: #1a1a1a;
+}
+.social-media {
+    width: 50%;
+    padding: 10px;
+}
+.social-li {
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+}
+.social-li li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.social-li li {
+    padding: 10px;
+}
+.social-p {
+    padding-top: 65px;
+}
+
+.social-p span {
+    color: white;
+}
+
+.social-p p {
+    color: #666;
+    font-size: 20px;
+    text-align: end;
+}
+.social-li li a:hover{
+    color: #f25454;
+    transition: color .5s;
+}
+@media (min-width: 320px) and (max-width: 567px){
+        .carousel-item h1 
+    {
+        font-size: 40px;
+        color: red;
+    }
+}
